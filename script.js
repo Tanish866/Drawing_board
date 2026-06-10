@@ -10,9 +10,6 @@ function setupcanva(){
     const rect = canvas.getBoundingClientRect();
     const dpi = window.devicePixelRatio;
 
-    console.log(rect);
-    console.log(dpi);
-
     canvas.width = rect.width * dpi;
     canvas.height = rect.height * dpi;
     ctx.scale(dpi, dpi);
